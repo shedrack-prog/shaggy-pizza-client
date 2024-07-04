@@ -13,6 +13,7 @@ export const loader = async () => {
         withCredentials: true,
       }
     );
+    console.log(data);
     return data;
   } catch (error) {
     toast.info('Session expired. Please login again.');
