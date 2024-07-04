@@ -16,6 +16,7 @@ export const loader = async () => {
     return data;
   } catch (error) {
     toast.info('Session expired. Please login again.');
+    console.log(error);
     return redirect('/login');
   }
 };
